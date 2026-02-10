@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taj Fashion | Elegant Ethnic Wear</title>  <!-- Google Fonts -->  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">  <style>
+    :root {
+      --primary: #5b0f1b;
+      --secondary: #c9a24d;
+      --light: #f8f6f2;
+      --dark: #1c1c1c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: white;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      height: 85vh;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: var(--secondary);
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 80px 60px;
+    }
+
+    section h3 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+      color: var(--primary);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .product .info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product h4 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+    }
+
+    .product span {
+      color: var(--secondary);
+      font-weight: 500;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      padding: 40px 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    footer h4 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 15px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 15px;
+      background: #3e0b13;
+      color: #ddd;
+      font-size: 0.85rem;
+    }
+  </style></head>
+<body><header>
+  <h1>Taj Fashion</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section class="hero" id="home">
+  <div>
+    <h2>Royal Elegance in Every Stitch</h2>
+    <p>Premium Suits & Ethnic Wear Crafted with Perfection</p>
+    <a href="#collection" class="btn">View Collection</a>
+  </div>
+</section><section id="collection">
+  <h3>Our Suit Collection</h3>
+  <div class="products"><!-- EDIT HERE: Replace images and text -->
+<div class="product">
+  <img src="suit1.jpg" alt="Suit 1">
+  <div class="info">
+    <h4>Designer Suit</h4>
+    <span>₹12,999</span>
+  </div>
+</div>
+
+<div class="product">
+  <img src="suit2.jpg" alt="Suit 2">
+  <div class="info">
+    <h4>Wedding Special</h4>
+    <span>₹18,499</span>
+  </div>
+</div>
+
+<div class="product">
+  <img src="suit3.jpg" alt="Suit 3">
+  <div class="info">
+    <h4>Luxury Ethnic</h4>
+    <span>₹22,999</span>
+  </div>
+</div>
+
+  </div>
+</section><footer id="contact">
+  <div>
+    <h4>Contact Us</h4>
+    <a href="tel:+919999999999">📞 +91 99999 99999</a>
+    <a href="mailto:tajfashion@gmail.com">📧 tajfashion@gmail.com</a>
+  </div>  <div>
+    <h4>Social</h4>
+    <a href="https://wa.me/919999999999">WhatsApp</a>
+    <a href="https://instagram.com/tajfashion">Instagram</a>
+  </div>  <div>
+    <h4>Address</h4>
+    <p>Punjab, India</p>
+  </div>
+</footer><div class="copyright">
+  © 2026 Taj Fashion. All Rights Reserved.
+</div></body>
+</html>
